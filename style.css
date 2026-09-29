@@ -1,0 +1,367 @@
+/* =========================
+   PERUSASETUKSET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1c1f22;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #292c30;
+    border-bottom: 1px solid #3a3d41;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 16px 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #d4d4d4;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================
+   YLEISET
+========================= */
+
+main {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 70px 24px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+.section-label {
+    color: #b8bcc1;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.intro-text {
+    color: #d0d2d5;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    line-height: 1.05;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    color: #d1d4d7;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #bfc2c6;
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   PAINIKE
+========================= */
+
+.button {
+    display: inline-block;
+
+    background-color: #ffffff;
+    color: #1c1f22;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 13px 22px;
+    border-radius: 30px;
+
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: #dcdcdc;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   KUVA
+========================= */
+
+.hero-image img {
+    width: 240px;
+    height: 240px;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 6px solid #ffffff;
+
+    box-shadow: 0 0 0 10px #2b2e32;
+}
+
+
+/* =========================
+   SISÄLTÖSEKTIOT
+========================= */
+
+.content-section {
+    background-color: #272a2e;
+    border: 1px solid #34373b;
+    border-radius: 12px;
+    margin: 20px 24px;
+    padding: 45px 34px;
+}
+
+.section-description {
+    color: #bfc2c6;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   KORTIT
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card {
+    background-color: #303338;
+    border: 1px solid #3b3e43;
+    border-radius: 9px;
+
+    padding: 22px;
+
+    display: flex;
+    gap: 18px;
+
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    background-color: #35383d;
+}
+
+.card-icon {
+    min-width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffffff;
+    color: #1c1f22;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.card h3 {
+    margin-bottom: 7px;
+    font-size: 1.1rem;
+}
+
+.card p {
+    color: #c2c4c7;
+    font-size: 0.92rem;
+}
+
+
+/* =========================
+   MINUSTA
+========================= */
+
+.about-section {
+    background-color: #292c30;
+    border: 1px solid #383b40;
+    border-radius: 12px;
+    margin: 20px 24px;
+    padding: 40px 34px;
+}
+
+.about-section p:last-child {
+    color: #c4c6c9;
+    max-width: 750px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #292c30;
+
+    text-align: center;
+
+    padding: 25px 20px;
+
+    margin-top: 40px;
+
+    border-top: 1px solid #3a3d41;
+}
+
+footer p:first-child {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+footer p:last-child {
+    color: #aeb1b5;
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+
+    .content-section,
+    .about-section {
+        margin-left: 14px;
+        margin-right: 14px;
+        padding: 30px 22px;
+    }
+
+    section {
+        padding: 50px 15px;
+    }
+}
+
